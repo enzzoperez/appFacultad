@@ -13,10 +13,13 @@ export class HorariosPage {
   constructor(public _materias: MateriasService) {}
 
   ionViewDidLoad(){
-  	this.materias=this._materias.getMateriaDia('Física');
+  	this.materias=this._materias.getMateriaDia('Lunes - T');
 
-  	console.log('MABE: ',this.materias.Object.horarios);
-  	console.log('Se cargo materia con el dia');
+  	for(let data of this.materias) {
+		console.log('Cualquiera: ', data);
+	}
+  	console.log('MABE: ');
+  	
   }
 
   // clasesMartes:Array <any> = this.materias.getMateriaDia('Martes');
