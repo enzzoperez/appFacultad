@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Page Two</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+	<ion-list *ngFor="let dia of dias">
+	  <ion-list-header>
+	    {{dia}}
+	  </ion-list-header>
+	  <ion-item *ngFor="let materia of materias">
+	  	DIAS: {{dias[0]}}
+		-----------------
+
+		ESTA VARIABLE IMPORT
+		{{materia.horarios}}
+
+	  	</ion-item>
+	</ion-list>
+</ion-content>
