@@ -3,15 +3,141 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Calendario</ion-title>
+    <ion-title>CALENDARIO ACADEMICO 2017</ion-title>
   </ion-navbar>
 </ion-header>
 
 
-<ion-content padding>
+<ion-content> 
+	<div padding>
+		<ion-segment [(ngModel)]="calendario">
+			<ion-segment-button value="clases">
+				Clases
+			</ion-segment-button>
+			<ion-segment-button value="examenes">
+				Exámenes
+			</ion-segment-button>
+			<ion-segment-button value="inscripciones">
+				Inscripciones
+			</ion-segment-button>
+			<ion-segment-button value="actas">
+				Actas de Promoción
+			</ion-segment-button>
+		</ion-segment>
+	</div>
 
-	<h1>
-		soy calendario
-	</h1>
+	<div [ngSwitch]="calendario">
+		<ion-list *ngSwitchCase="'inscripciones'">
+			<ion-item>
+				<h2>Asignaturas Anuales:</h2>
+				<div>
+					20 FEBRERO 2017 al 10 MARZO 2017
+				</div>
+			</ion-item>
+			<ion-item>
+				<h2>Asignaturas del 1er. Cuatrimestre:</h2>
+				<div>
+					20 FEBRERO 2017 al 10 MARZO 2017
+				</div>
+			</ion-item>
+			<ion-item>
+				<h2>Asignaturas del 2do. Cuatrimestre:</h2>
+				<div>
+					24 JULIO 2017 al 04 AGOSTO 2017
+				</div>
+			</ion-item>
+			<ion-item>
+				<h2>INSCRIPCIONES Año 2018</h2>
+				<div>
+					Ingresantes Año 2018: 04 DICIEMBRE 2017 al 15 DICIEMBRE 2017 – 05FEBRERO2018 al 16FEBRERO2018
+				</div>
+			</ion-item>
+			
+		</ion-list>
 
+		<ion-list *ngSwitchCase="'clases'">
+			<ion-item>
+				<h2>Curso de Ingreso:</h2>
+				<div>
+					13FEBRERO 2017 al 20MARZO 2017
+				</div>
+			</ion-item>
+			<ion-item>
+				<h2>1er. Cuatrimestre:</h2>
+				<div>
+					13 MARZO 2017 al 23 JUNIO 2017
+				</div>
+			</ion-item>
+			<ion-item>
+				<h2>2do. Cuatrimestre:</h2>
+				<div>
+					07 AGOSTO 2017 al 17 NOVIEMBRE 2017
+				</div>
+			</ion-item>
+		</ion-list>
+
+		<ion-list *ngSwitchCase="'actas'">
+			<ion-item>
+				<h2>Primer Cuatrimestre:</h2>
+				<div>
+					26 – 27 DE JUNIO 2017
+				</div>
+			</ion-item>
+			<ion-item>
+				<h2>Segundo Cuatrimestre:</h2>
+				<div>
+					20 – 21 NOVIEMBRE DE 2017
+				</div>
+			</ion-item>
+		</ion-list>
+
+		<ion-list *ngSwitchCase="'examenes'">
+			<ion-item>
+				<h2>TURNO ABRIL/2017:</h2>
+				<div>
+					03 ABRIL 2017 al 07 ABRIL 2017
+					(Cierre de Inscripción 10 MARZ0 2017)
+				</div>
+			</ion-item>
+			<ion-item>
+				<h2>TURNO MAYO/2017:</h2>
+				<div>
+					15 MAYO 2017 al  19 MAYO 2017
+					(Cierre de Inscripción 22 ABRIL 2017)
+				</div>
+			</ion-item>
+			<ion-item>
+				<h2>TURNO JULIO-AGOSTO/ 2017</h2>
+				<div>
+					1er. Llamado: 03 JULIO 2017 al 07 JULIO 2017
+
+					2do. Llamado: 31 JULIO 2017 al 04 AGOSTO 2017
+				</div>
+			</ion-item>
+			<ion-item>
+				<h2>TURNO SEPTIEMBRE/2017</h2>
+				<div>
+					25 SEPTIEMBRE 2017 al 29 SEPTIEMBRE 2017
+
+					(Cierre de Inscripción: 01 SEPTIEMBRE 2017).
+				</div>
+			</ion-item>
+			<ion-item>
+				<h2>TURNO NOVIEMBRE- DICIEMBRE/ 2017</h2>
+				<div>
+					1er. Llamado: 28 NOVIEMBRE 2017 al 04 DICIEMBRE 2017
+
+					2do. Llamado: 18 DICIEMBRE 2017 al 22 DICIEMBRE 2017
+				</div>
+			</ion-item>
+			<ion-item>
+				<h2>TURNO FEBRERO-MARZO 2018</h2>
+				<div>
+					1er. Llamado: 19 FEBRERO 2018 al 23 FEBRERO 2018
+
+					2do. Llamado: 05 MARZO 2018 al 09 MARZO 2018
+				</div>
+			</ion-item>
+		</ion-list>
+	</div>
 </ion-content>

@@ -12,7 +12,7 @@ export class MateriasService {
 	getMateriaDia(dia:string):Array <any>{
 		let materias = MATERIAS.filter(x => x.horarios.filter(h=>h.dia === dia));
 		for(let data of materias) {
-			console.log('UNA MATERIA-->', materias;
+			console.log('UNA MATERIA-->', data);
 		}
 		return materias;
 	}

@@ -16,8 +16,8 @@ export class HorariosPage {
   	this.materias=this._materias.getMateriaDia('Lunes - T');
 
   	for(let data of this.materias) {
-		console.log('Cualquiera: ', data);
-	}
+  		console.log('Cualquiera: ', data);
+  	}
   	console.log('MABE: ');
   	
   }
