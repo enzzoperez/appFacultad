@@ -9,7 +9,11 @@
 
 
 <ion-content>
-	<ion-item *ngFor="let item of ejemplo">
+	<ion-list>
+		<ion-item *ngFor="let item of estudio">
+			<h2>{{item.numero}} - {{item.nombre}}</h2>
+			<h3>Año:{{item.ano}}  -  Regimen:{{item.regimen}}</h3>
+			<p>Correlativas: {{item.correlatividades}}</p>
 		</ion-item>
-	</ion-item>
+	</ion-list>
 </ion-content>
