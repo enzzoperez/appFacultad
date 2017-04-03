@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { ESTUDIOS } from '../../providers/mocks/plan-estudios.mock'
 
 /*
   Generated class for the PlanEstudios page.
@@ -12,11 +13,13 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'plan-estudios.html'
 })
 export class PlanEstudiosPage {
-
+  
+  estudio: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PlanEstudiosPage');
-  }
 
+  
+  ionViewDidLoad(){
+  	this.estudio = ESTUDIOS;
+  }
 }
