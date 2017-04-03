@@ -8,6 +8,8 @@ import { HorariosPage } from '../pages/horarios/horarios';
 import { ExamenesPage } from '../pages/examenes/examenes';
 import { PlanEstudiosPage } from '../pages/plan-estudios/plan-estudios';
 import { CalendarioPage } from '../pages/calendario/calendario';
+import { AboutPage } from '../pages/about/about';
+import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -24,6 +26,8 @@ import { MateriasService} from '../providers/materias.service';
     ExamenesPage,
     PlanEstudiosPage, 
     CalendarioPage,
+    AboutPage,
+    TabsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -37,6 +41,8 @@ import { MateriasService} from '../providers/materias.service';
     ExamenesPage,
     PlanEstudiosPage, 
     CalendarioPage,
+    AboutPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
