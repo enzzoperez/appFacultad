@@ -1,5 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 import { MyApp } from './app.component';
 import { Page1 } from '../pages/page1/page1';
@@ -48,7 +49,8 @@ import { MateriasService} from '../providers/materias.service';
     StatusBar,
     SplashScreen,
     MateriasService,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    InAppBrowser,
   ]
 })
 export class AppModule {}
