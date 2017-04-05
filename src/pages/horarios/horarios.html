@@ -3,17 +3,88 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Page Two</ion-title>
+    <ion-title>Horarios de Clases</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content>
-	<ion-list *ngFor="let dia of dias">
-	  <ion-list-header>
-	    {{dia}}
-	  </ion-list-header>
-	  <ion-item *ngFor="let materia of materias">
-	  </ion-item>
-	</ion-list>
+	<div padding>
+		<ion-segment [(ngModel)]="anos">
+			<ion-segment-button value="1">
+				1º Año
+			</ion-segment-button>
+			<ion-segment-button value="2">
+				2º Año
+			</ion-segment-button>
+			<ion-segment-button value="3">
+				3º Año
+			</ion-segment-button>
+			<ion-segment-button value="4">
+				4º Año
+			</ion-segment-button>
+			<ion-segment-button value="5">
+				5º Año
+			</ion-segment-button>
+		</ion-segment>
+	</div>
+
+	<div [ngSwitch]="anos">
+		<ion-list *ngSwitchCase="'1'">
+			<ion-item *ngFor="let dia of dias">
+				<button ion-button block (click)="mostrarMateriasDias(dia,1)">{{dia}}</button>
+				<div *ngIf="mostrar==dia">
+					<ion-item *ngFor="let materia of materiasDias">
+						<h2>{{materia.nombre}} - {{materia.modo}}</h2>
+						<h3><b>Comisión: {{materia.comision}}</b></h3>
+						<h3>Hora: {{materia.hora}} - Aula: {{materia.aula}}</h3>
+					</ion-item>
+				</div>
+			</ion-item>
+		</ion-list>
+		<ion-list *ngSwitchCase="'2'">
+			<ion-item *ngFor="let dia of dias">
+				<button ion-button block (click)="mostrarMateriasDias(dia,2)">{{dia}}</button>
+				<div *ngIf="mostrar==dia">
+					<ion-item *ngFor="let materia of materiasDias">
+						<h2>{{materia.nombre}} - {{materia.modo}}</h2>
+						<h3>Hora: {{materia.hora}} - Aula: {{materia.aula}}</h3>
+					</ion-item>
+				</div>
+			</ion-item>
+		</ion-list>
+		<ion-list *ngSwitchCase="'3'">
+			<ion-item *ngFor="let dia of dias">
+				<button ion-button block (click)="mostrarMateriasDias(dia,3)">{{dia}}</button>
+				<div *ngIf="mostrar==dia">
+					<ion-item *ngFor="let materia of materiasDias">
+						<h2>{{materia.nombre}} - {{materia.modo}}</h2>
+						<h3>Hora: {{materia.hora}} - Aula: {{materia.aula}}</h3>
+					</ion-item>
+				</div>
+			</ion-item>
+		</ion-list>
+		<ion-list *ngSwitchCase="'4'">
+			<ion-item *ngFor="let dia of dias">
+				<button ion-button block (click)="mostrarMateriasDias(dia,4)">{{dia}}</button>
+				<div *ngIf="mostrar==dia">
+					<ion-item *ngFor="let materia of materiasDias">
+						<h2>{{materia.nombre}} - {{materia.modo}}</h2>
+						<h3>Hora: {{materia.hora}} - Aula: {{materia.aula}}</h3>
+					</ion-item>
+				</div>
+			</ion-item>
+		</ion-list>
+		<ion-list *ngSwitchCase="'5'">
+			<ion-item *ngFor="let dia of dias">
+				<button ion-button block (click)="mostrarMateriasDias(dia,5)">{{dia}}</button>
+				<div *ngIf="mostrar==dia">
+					<ion-item *ngFor="let materia of materiasDias">
+						<h2>{{materia.nombre}} - {{materia.modo}}</h2>
+						<h3>Hora: {{materia.hora}} - Aula: {{materia.aula}}</h3>
+					</ion-item>
+				</div>
+			</ion-item>
+		</ion-list>
+	</div>
 </ion-content>

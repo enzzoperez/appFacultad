@@ -9,11 +9,8 @@ export class MateriasService {
 		return MATERIAS;
 	}
 
-	getMateriaDia(dia:string):Array <any>{
-		let materias = MATERIAS.filter(x => x.horarios.filter(h=>h.dia === dia));
-		for(let data of materias) {
-			console.log('UNA MATERIA-->', data);
-		}
+	getMateriaDia(dia:string, ano:string):Array <any>{
+		let materias = MATERIAS.filter(x => x.dia == dia && x.ano == ano);
 		return materias;
 	}
 }

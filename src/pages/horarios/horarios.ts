@@ -9,22 +9,17 @@ import { MateriasService } from '../../providers/materias.service';
 export class HorariosPage {
 
   dias = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes'];
-  materias: any;
+  materiasDias: any;
+  mostrar:string;
+  anos:string = "1";
   constructor(public _materias: MateriasService) {}
 
-  ionViewDidLoad(){
-  	this.materias=this._materias.getMateriaDia('Lunes - T');
 
-  	for(let data of this.materias) {
-  		console.log('Cualquiera: ', data);
-  	}
-  	console.log('MABE: ');
-  	
+  mostrarMateriasDias(dia:string, ano:string){
+    this.materiasDias = this._materias.getMateriaDia(dia, ano);
+    if (this.mostrar == dia)
+      this.mostrar = "";
+    else 
+      this.mostrar = dia;
   }
-
-  // clasesMartes:Array <any> = this.materias.getMateriaDia('Martes');
-  // clasesMiercoles:Array <any> = this.materias.getMateriaDia('Miercoles');
-  // clasesJueves:Array <any> = this.materias.getMateriaDia('Jueves');
-  // clasesViernes:Array <any> = this.materias.getMateriaDia('Viernes');
-
 }

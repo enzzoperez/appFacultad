@@ -7,10 +7,11 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <button ion-button block><ion-icon name="clock"></ion-icon>Horarios</button>
-  <button ion-button block><ion-icon name="home"></ion-icon>Examenes</button>
-  <button ion-button block><ion-icon name="calendar"></ion-icon>Calendario Académico</button>
-  <button ion-button block><ion-icon ios="ios-list-box" md="md-list-box"></ion-icon>Plan de estudio</button>
-  <button ion-button block><ion-icon name="link"></ion-icon>SIU guaraní</button>
+
+<ion-content>
+  <button ion-button block *ngFor="let p of pages" (click)="openPage(p)">
+        <!--<ion-icon item-left [name]="p.icon" [color]="isActive(p)"></ion-icon>-->
+        {{p.title}}
+  </button>
+  <button ion-button block (click)="openLink('http://guarani.tecno.unca.edu.ar')">SIU guaraní</button>
 </ion-content>
