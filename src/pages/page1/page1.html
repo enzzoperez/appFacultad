@@ -8,10 +8,17 @@
 </ion-header>
 
 
+
 <ion-content>
-  <button ion-button block *ngFor="let p of pages" (click)="openPage(p)">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-10 offset-1>
+      <button ion-button block *ngFor="let p of pages" (click)="openPage(p)">
         <!--<ion-icon item-left [name]="p.icon" [color]="isActive(p)"></ion-icon>-->
         {{p.title}}
-  </button>
-  <button ion-button block (click)="openLink('http://guarani.tecno.unca.edu.ar')">SIU guaraní</button>
+      </button>
+      <button ion-button block (click)="openLink('http://guarani.tecno.unca.edu.ar')">SIU guaraní</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>  
 </ion-content>

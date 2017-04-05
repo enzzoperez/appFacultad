@@ -11,7 +11,7 @@ import { CalendarioPage } from '../calendario/calendario';
 
 @Component({
   selector: 'page-page1',
-  templateUrl: 'page1.html'
+  templateUrl: 'page1.html',
 })
 export class Page1 {
 
@@ -21,7 +21,7 @@ export class Page1 {
     this.pages = [
       { title: 'Horarios', component: HorariosPage },
       { title: 'Examenes', component: ExamenesPage },
-      { title: 'Calendario Acad.', component: CalendarioPage },
+      { title: 'Calendario Académico', component: CalendarioPage },
       { title: 'Plan de Estudios', component: PlanEstudiosPage },
     ];
   }

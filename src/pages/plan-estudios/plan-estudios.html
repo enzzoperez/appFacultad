@@ -7,9 +7,11 @@
   </ion-navbar>
 </ion-header>
 
-
 <ion-content>
-	<button ion-button block (click)="openLink('http://tecno.unca.edu.ar/tecno2/wp-content/uploads/Reglamentos/informatica/IngenieriaInformatica2011.pdf')">DESCARGAR EN PDF</button>
+	<div ion-col col-10 offset-1>	
+		<button ion-button block 
+		(click)="openLink('http://tecno.unca.edu.ar/tecno2/wp-content/uploads/Reglamentos/informatica/IngenieriaInformatica2011.pdf')">DESCARGAR EN PDF</button>
+	</div>
 	<ion-list>
 		<ion-item *ngFor="let item of estudio">
 			<h2>{{item.numero}} - {{item.nombre}}</h2>
