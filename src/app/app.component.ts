@@ -10,6 +10,7 @@ import { HorariosPage } from '../pages/horarios/horarios';
 import { ExamenesPage } from '../pages/examenes/examenes';
 import { PlanEstudiosPage } from '../pages/plan-estudios/plan-estudios';
 import { CalendarioPage } from '../pages/calendario/calendario';
+import { AboutPage } from '../pages/about/about';
 
 
 @Component({
@@ -37,6 +38,7 @@ export class MyApp {
       { title: 'Examenes', component: ExamenesPage },
       { title: 'Calendario Acad.', component: CalendarioPage },
       { title: 'Plan de Estudios', component: PlanEstudiosPage },
+      { title: 'Dpto. de Informática', component: AboutPage},
     ];
 
   }

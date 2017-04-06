@@ -7,6 +7,8 @@ import { HorariosPage } from '../horarios/horarios';
 import { ExamenesPage } from '../examenes/examenes';
 import { PlanEstudiosPage } from '../plan-estudios/plan-estudios';
 import { CalendarioPage } from '../calendario/calendario';
+import { AboutPage } from '../about/about';
+
 
 
 @Component({
@@ -15,14 +17,15 @@ import { CalendarioPage } from '../calendario/calendario';
 })
 export class Page1 {
 
-	pages:Array<{title:string, component: any}>
+	pages:Array<{title:string, component: any, icon: string}>
   
   constructor(public navCtrl: NavController, private iab:InAppBrowser) {
     this.pages = [
-      { title: 'Horarios', component: HorariosPage },
-      { title: 'Examenes', component: ExamenesPage },
-      { title: 'Calendario Académico', component: CalendarioPage },
-      { title: 'Plan de Estudios', component: PlanEstudiosPage },
+      { title: 'Horarios', component: HorariosPage, icon: 'clock' },
+      { title: 'Exámenes', component: ExamenesPage, icon:'list-box' },
+      { title: 'Calendario Académico', component: CalendarioPage, icon: 'calendar' },
+      { title: 'Plan de Estudios', component: PlanEstudiosPage, icon: 'copy' },
+      { title: 'Dpto. de Informática', component: AboutPage, icon: 'contacts' },
     ];
   }
 

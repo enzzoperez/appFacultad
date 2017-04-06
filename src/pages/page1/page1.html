@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Bienvenido/Welcome</ion-title>
+    <ion-title>Ingeniería Informática UNCa</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -12,13 +12,18 @@
 <ion-content>
   <ion-grid>
     <ion-row>
-      <ion-col col-10 offset-1>
-      <button ion-button block *ngFor="let p of pages" (click)="openPage(p)">
-        <!--<ion-icon item-left [name]="p.icon" [color]="isActive(p)"></ion-icon>-->
-        {{p.title}}
-      </button>
-      <button ion-button block (click)="openLink('http://guarani.tecno.unca.edu.ar')">SIU guaraní</button>
-      </ion-col>
+      <ion-col col-6 offset-2 *ngFor="let p of pages">
+          <button ion-button clear icon-only color="primary" (click)="openPage(p)">
+            <ion-icon [name]="p.icon" is-active="false"></ion-icon>
+            {{p.title}}
+          </button>
+      </ion-col>      
+      <ion-col col-6 offset-2>
+        <button ion-button clear icon-only color="primary" (click)="openLink('http://guarani.tecno.unca.edu.ar')">
+          <ion-icon name='link' is-active="false"></ion-icon>
+          SIU guaraní
+        </button>
+      </ion-col> 
     </ion-row>
   </ion-grid>  
 </ion-content>
