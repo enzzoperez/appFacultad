@@ -13,9 +13,9 @@
 		(click)="openLink('http://tecno.unca.edu.ar/tecno2/wp-content/uploads/Reglamentos/informatica/IngenieriaInformatica2011.pdf')">DESCARGAR EN PDF</button>
 	</div>
 	<ion-list text-wrap>
-		<ion-item *ngFor="let item of estudio">
+		<ion-item *ngFor="let item of estudio.estudios">
 			<h2><b>{{item.numero}} - {{item.nombre}}</b></h2>
-			<h3>Año:{{item.ano}}  -  Regimen:{{item.regimen}}</h3>
+			<h3>Año: {{item.ano}}  -  Regimen: {{item.regimen}}</h3>
 			<p>Correlativas: {{item.correlatividades}}</p>
 		</ion-item>
 	</ion-list>

@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 
-import { ESTUDIOS } from '../../providers/mocks/plan-estudios.mock'
+import { MateriasService } from '../../providers/materias.service'; 
+
 
 @Component({
   selector: 'page-plan-estudios',
@@ -11,13 +12,20 @@ import { ESTUDIOS } from '../../providers/mocks/plan-estudios.mock'
 export class PlanEstudiosPage {
   
   estudio: any;
+
   constructor(
   	private iab: InAppBrowser, 
   	public navCtrl: NavController, 
-  	public navParams: NavParams) {}
+  	public navParams: NavParams,
+    private planService: MateriasService) {
+    this.estudio = [];
+  }
 
   ionViewDidLoad(){
-  	this.estudio = ESTUDIOS;
+    this.planService.getPlan().subscribe( data => {
+      this.estudio = data;
+      console.log('unosos', this.estudio);
+    });
   }
 
   openLink(url:string) {

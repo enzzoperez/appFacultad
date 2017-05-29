@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { NavController } from 'ionic-angular';
+import { NavController, AlertController, Platform } from 'ionic-angular';
 
 import { HorariosPage } from '../horarios/horarios';
 import { ExamenesPage } from '../examenes/examenes';
@@ -19,7 +21,14 @@ export class Page1 {
 
 	pages:Array<{title:string, component: any, icon: string}>
   
-  constructor(public navCtrl: NavController, private iab:InAppBrowser) {
+  constructor(public navCtrl: NavController, 
+    private iab:InAppBrowser,
+    public splashScreen: SplashScreen,
+    public statusBar: StatusBar,
+    public platform: Platform,
+    private alertCtrl: AlertController
+    ) {
+
     this.pages = [
       { title: 'Horarios', component: HorariosPage, icon: 'clock' },
       { title: 'Exámenes', component: ExamenesPage, icon:'list-box' },

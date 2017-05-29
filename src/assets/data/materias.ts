@@ -1,4 +1,5 @@
 export var MATERIAS:Array <any> = [
+	
 	{'ano':'1','comision':'1-2','modo':'Teor.','dia':'Lunes', 'nombre':'Análisis Matemático','hora':'10.00', 'aula': 'Mayor 2'},
 	{'ano':'1','comision':'2','modo':'Prac.','dia':'Lunes', 'nombre':'Química', 'hora':'15.00', 'aula': 'Lab. Química'},
 	{'ano':'1','comision':'1','modo':'Prac.','dia':'Lunes', 'nombre':'Química', 'hora':'17.00', 'aula': 'Lab. Química'},
@@ -86,6 +87,5 @@ export var MATERIAS:Array <any> = [
 
 	{'ano':'5','modo':'Teor..','dia':'Viernes' ,'nombre':'Sist. Inteligentes', 'hora':'09.00(C/15)', 'aula': 'IDI'},
 	{'ano':'5','modo':'Prac.','dia':'Viernes' ,'nombre':'Minería de datos(E)', 'hora':'16.00', 'aula': 'IDI'},
-	{'ano':'5','modo':'Prac.','dia':'Viernes' ,'nombre':'Gestión en la web(E)', 'hora':'18.00', 'aula': 'IDI'},
-
+	{'ano':'5','modo':'Prac.','dia':'Viernes' ,'nombre':'Gestión en la web(E)', 'hora':'18.00', 'aula': 'IDI'}
 ]

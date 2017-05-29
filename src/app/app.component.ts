@@ -5,7 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 import { Page1 } from '../pages/page1/page1';
-//import { Page2 } from '../pages/page2/page2';
 import { HorariosPage } from '../pages/horarios/horarios';
 import { ExamenesPage } from '../pages/examenes/examenes';
 import { PlanEstudiosPage } from '../pages/plan-estudios/plan-estudios';
@@ -30,8 +29,6 @@ export class MyApp {
     public splashScreen: SplashScreen,
     private iab:InAppBrowser) {
     
-    this.initializeApp();
-
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Horarios', component: HorariosPage },
