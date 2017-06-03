@@ -9,7 +9,6 @@ import { ExamenesPage } from '../pages/examenes/examenes';
 import { PlanEstudiosPage } from '../pages/plan-estudios/plan-estudios';
 import { CalendarioPage } from '../pages/calendario/calendario';
 import { AboutPage } from '../pages/about/about';
-import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MateriasService} from '../providers/materias.service';
@@ -38,7 +37,6 @@ import { MateriasService} from '../providers/materias.service';
     AboutPage,
   ],
   providers: [
-    StatusBar,
     SplashScreen,
     MateriasService,
     {provide: ErrorHandler, useClass: IonicErrorHandler},

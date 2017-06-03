@@ -11,19 +11,22 @@
 
 <ion-content>
   <ion-grid class="center">
-    <ion-row responsive-sm>
-      <ion-col width-75 *ngFor="let p of pages">
-          <button ion-button outline icon-left block (click)="openPage(p)">
+    <ion-row text-wrap *ngFor="let p of pages">
+      <ion-col col-12>
+          <button ion-button icon-left full (click)="openPage(p)">
             <ion-icon [name]="p.icon" is-active="false"></ion-icon>
             {{p.title}}
           </button>
       </ion-col>      
-      <ion-col width-75>
-        <button ion-button outline icon-left block (click)="openLink('http://guarani.tecno.unca.edu.ar')">
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <button ion-button icon-left full (click)="openLink('http://guarani.tecno.unca.edu.ar')">
           <ion-icon name='link' is-active="false"></ion-icon>
           SIU guaraní
         </button>
       </ion-col> 
-    </ion-row>
+  </ion-row>
+
   </ion-grid>  
 </ion-content>

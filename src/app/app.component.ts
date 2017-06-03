@@ -1,7 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 import { Page1 } from '../pages/page1/page1';
@@ -25,8 +23,6 @@ export class MyApp {
 
   constructor(
     public platform: Platform, 
-    public statusBar: StatusBar, 
-    public splashScreen: SplashScreen,
     private iab:InAppBrowser) {
     
     // used for an example of ngFor and navigation
@@ -44,7 +40,6 @@ export class MyApp {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      this.statusBar.styleDefault();
     });
   }
 

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
-import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { NavController, AlertController, Platform } from 'ionic-angular';
@@ -24,7 +23,6 @@ export class Page1 {
   constructor(public navCtrl: NavController, 
     private iab:InAppBrowser,
     public splashScreen: SplashScreen,
-    public statusBar: StatusBar,
     public platform: Platform,
     private alertCtrl: AlertController
     ) {
