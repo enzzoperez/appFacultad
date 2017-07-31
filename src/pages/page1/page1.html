@@ -7,26 +7,61 @@
   </ion-navbar>
 </ion-header>
 
-
-
 <ion-content>
-  <ion-grid class="center">
-    <ion-row text-wrap *ngFor="let p of pages">
-      <ion-col col-12>
-          <button ion-button icon-left full (click)="openPage(p)">
-            <ion-icon [name]="p.icon" is-active="false"></ion-icon>
-            {{p.title}}
-          </button>
-      </ion-col>      
-    </ion-row>
-    <ion-row>
-      <ion-col col-12>
-        <button ion-button icon-left full (click)="openLink('http://guarani.tecno.unca.edu.ar')">
-          <ion-icon name='link' is-active="false"></ion-icon>
-          SIU guaraní
+  <ion-grid>
+    <ion-row align-items-center>
+      <ion-col col-md-6>
+        <button ion-button icon-left (click)="openPage(horarios.component)">
+          <div>
+            <ion-icon id="icon" [name]="horarios.icon" is-active="false"></ion-icon>
+          </div>
+          <div text-wrap>{{horarios.title}}</div>
         </button>
-      </ion-col> 
-  </ion-row>
-
-  </ion-grid>  
+      </ion-col>
+      <ion-col col-md-6>
+        <button ion-button icon-left (click)="openPage(examenes.component)">
+          <div>
+            <ion-icon id="icon" [name]="examenes.icon" is-active="false"></ion-icon>
+          </div>
+          <div text-wrap>{{examenes.title}}</div>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col col-md-6>
+        <button ion-button icon-left (click)="openPage(calendario.component)">
+          <div>
+            <ion-icon id="icon" [name]="calendario.icon" is-active="false"></ion-icon>
+          </div>
+          <div text-wrap>{{calendario.title}}</div>
+        </button>
+      </ion-col>
+      <ion-col col-md-6>
+        <button ion-button icon-left (click)="openPage(plan.component)">
+          <div>
+            <ion-icon id="icon" [name]="plan.icon" is-active="false"></ion-icon>
+          </div>
+          <div text-wrap>{{plan.title}}</div>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col col-md-6>
+        <button ion-button icon-left (click)="openPage(dpto.component)">
+          <div>
+            <ion-icon id="icon" [name]="dpto.icon" is-active="false"></ion-icon>
+          </div>
+          <div text-wrap>{{dpto.title}}</div>
+        </button>
+      </ion-col>
+      <ion-col col-md-6>
+        <button ion-button icon-left (click)="openLink('http://guarani.tecno.unca.edu.ar/tecno/')">
+          <div>
+            <ion-icon id="icon" name='link' is-active="false"></ion-icon>
+          </div>
+          <div text-wrap>SIU guaraní</div>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

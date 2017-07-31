@@ -19,7 +19,7 @@ export class MyApp {
 
   rootPage: any = Page1;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: string}>;
 
   constructor(
     public platform: Platform, 
@@ -27,11 +27,11 @@ export class MyApp {
     
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Horarios', component: HorariosPage },
-      { title: 'Examenes', component: ExamenesPage },
-      { title: 'Calendario Acad.', component: CalendarioPage },
-      { title: 'Plan de Estudios', component: PlanEstudiosPage },
-      { title: 'Dpto. de Informática', component: AboutPage},
+      { title: 'Horarios', component: HorariosPage, icon: 'clock' },
+      { title: 'Exámenes', component: ExamenesPage, icon:'list-box' },
+      { title: 'Calendario Académico', component: CalendarioPage, icon: 'calendar' },
+      { title: 'Plan de Estudios', component: PlanEstudiosPage, icon: 'copy' },
+      { title: 'Dpto. de Informática', component: AboutPage, icon: 'contacts' },
     ];
 
   }

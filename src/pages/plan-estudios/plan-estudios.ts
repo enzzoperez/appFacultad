@@ -23,8 +23,7 @@ export class PlanEstudiosPage {
 
   ionViewDidLoad(){
     this.planService.getPlan().subscribe( data => {
-      this.estudio = data;
-      console.log('unosos', this.estudio);
+      this.estudio = data['estudios'];
     });
   }
 

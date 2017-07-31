@@ -19,7 +19,11 @@ import { AboutPage } from '../about/about';
 export class Page1 {
 
 	pages:Array<{title:string, component: any, icon: string}>
-  
+  horarios = { title: 'Horarios', component: HorariosPage, 'icon': 'clock' };
+  examenes = { title: 'Exámenes', component: ExamenesPage, icon:'list-box' };
+  calendario = { title: 'Calendario Académico', component: CalendarioPage, icon: 'calendar' };
+  plan = { title: 'Plan de Estudios', component: PlanEstudiosPage, icon: 'copy' };
+  dpto = { title: 'Dpto. de Informática', component: AboutPage, icon: 'contacts' };
   constructor(public navCtrl: NavController, 
     private iab:InAppBrowser,
     public splashScreen: SplashScreen,
@@ -37,7 +41,7 @@ export class Page1 {
   }
 
   openPage(page){
-  	this.navCtrl.push(page.component);
+  	this.navCtrl.push(page);
   }
   openLink(url:string){
     let browser = this.iab.create(url);

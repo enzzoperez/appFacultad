@@ -15,8 +15,23 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-
+.content-md{
+	background-color: #2D302F;
+}
 body{
 
-		background-color: rgb(33, 47, 61);
+	background-color: rgb(33, 47, 61);
+}
+.item-md{
+	background-color: #2d302f;
+	color: white;
+}
+.toolbar-content-md{
+	text-align: center;
+}
+.segment-md .segment-button{
+	color:white;
+}
+.segment-md .segment-button.segment-activated{
+	border-color:white;
 }

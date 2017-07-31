@@ -1,12 +1,34 @@
 page-page1 {
 	.center {
-	    top: 50%;
-	    -webkit-transform: translateY(-50%);
-	    -moz-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	    -o-transform: translateY(-50%);
-	    transform: translateY(-50%);
-	    position: absolute !important;
-	    margin:0 auto;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+		position: absolute !important;
+		margin:0 auto;
+	}
+	.button-inner{
+		display: grid;
+	}
+	.col{
+		text-align: center;
+		height: 90%;
+	}
+	.grid{
+		height: 100%;
+	}
+	.row{
+		height: 33%;
+	}
+	.button-md{
+		height: 100%;
+		width: 90%;
+		border-radius: 15px;
+	}
+	#icon{
+		font-size: 100px;
+		padding-right: 0px;
 	}
 }
