@@ -9,6 +9,9 @@ import { PlanEstudiosPage } from '../pages/plan-estudios/plan-estudios';
 import { CalendarioPage } from '../pages/calendario/calendario';
 import { AboutPage } from '../pages/about/about';
 
+import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free';
+
+
 
 @Component({
   selector:'ion-app',
@@ -23,7 +26,8 @@ export class MyApp {
 
   constructor(
     public platform: Platform, 
-    private iab:InAppBrowser) {
+    private iab:InAppBrowser,
+    private adMobFree: AdMobFree) {
     
     // used for an example of ngFor and navigation
     this.pages = [
@@ -35,17 +39,28 @@ export class MyApp {
     ];
 
   }
+  
+  showBanner() {
+    try {
+      const bannerConfig: AdMobFreeBannerConfig = {
+        isTesting: false,
+        autoShow: true,
+        id: "ca-app-pub-5243900877967265/8364961790"
+      }
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-    });
+      this.adMobFree.banner.config(bannerConfig);
+
+      this.adMobFree.banner.prepare();
+
+      this.adMobFree.banner.show();
+    }
+    catch (e) {
+      console.error(e);
+    }
   }
 
   openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
+    this.showBanner();
     this.nav.push(page.component);
   }
 

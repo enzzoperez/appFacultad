@@ -10,6 +10,7 @@ import { PlanEstudiosPage } from '../plan-estudios/plan-estudios';
 import { CalendarioPage } from '../calendario/calendario';
 import { AboutPage } from '../about/about';
 
+import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free';
 
 
 @Component({
@@ -18,29 +19,47 @@ import { AboutPage } from '../about/about';
 })
 export class Page1 {
 
-	pages:Array<{title:string, component: any, icon: string}>
   horarios = { title: 'Horarios', component: HorariosPage, 'icon': 'clock' };
   examenes = { title: 'Exámenes', component: ExamenesPage, icon:'list-box' };
   calendario = { title: 'Calendario Académico', component: CalendarioPage, icon: 'calendar' };
   plan = { title: 'Plan de Estudios', component: PlanEstudiosPage, icon: 'copy' };
   dpto = { title: 'Dpto. de Informática', component: AboutPage, icon: 'contacts' };
-  constructor(public navCtrl: NavController, 
+  
+  constructor(
+    public navCtrl: NavController, 
     private iab:InAppBrowser,
     public splashScreen: SplashScreen,
     public platform: Platform,
-    private alertCtrl: AlertController
+    private alertCtrl: AlertController,
+    private adMobFree: AdMobFree
     ) {
+  }
 
-    this.pages = [
-      { title: 'Horarios', component: HorariosPage, icon: 'clock' },
-      { title: 'Exámenes', component: ExamenesPage, icon:'list-box' },
-      { title: 'Calendario Académico', component: CalendarioPage, icon: 'calendar' },
-      { title: 'Plan de Estudios', component: PlanEstudiosPage, icon: 'copy' },
-      { title: 'Dpto. de Informática', component: AboutPage, icon: 'contacts' },
-    ];
+  ionViewDidLoad(){
+    this.showBanner();
+  }
+
+  showBanner() {
+    try {
+      const bannerConfig: AdMobFreeBannerConfig = {
+        isTesting: false,
+        autoShow: true,
+        id: "ca-app-pub-5243900877967265/8364961790"
+      }
+
+      this.adMobFree.banner.config(bannerConfig);
+
+      this.adMobFree.banner.prepare();
+
+      this.adMobFree.banner.show();
+    }
+    catch (e) {
+      console.error(e);
+    }
   }
 
   openPage(page){
+    this.showBanner();
   	this.navCtrl.push(page);
   }
   openLink(url:string){

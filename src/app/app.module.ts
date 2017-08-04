@@ -12,6 +12,7 @@ import { AboutPage } from '../pages/about/about';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MateriasService} from '../providers/materias.service';
+import { AdMobFree } from '@ionic-native/admob-free';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { MateriasService} from '../providers/materias.service';
     MateriasService,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     InAppBrowser,
+    AdMobFree
   ]
 })
 export class AppModule {}
