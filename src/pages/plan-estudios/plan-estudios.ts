@@ -28,7 +28,7 @@ export class PlanEstudiosPage {
   }
 
   openLink(url:string) {
-        let browser = this.iab.create('http://docs.google.com/gview?embedded=true&url=' + url);
+        let browser = this.iab.create('https://docs.google.com/viewerng/viewer?url=' + url);
         browser.show();
     }
 }

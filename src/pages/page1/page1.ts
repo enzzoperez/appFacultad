@@ -36,30 +36,31 @@ export class Page1 {
   }
 
   ionViewDidLoad(){
-    this.showBanner();
+    //FOR PRODUCTION UNCOMMENT THIS
+    //this.showBanner();
   }
 
-  showBanner() {
-    try {
-      const bannerConfig: AdMobFreeBannerConfig = {
-        isTesting: false,
-        autoShow: true,
-        id: "ca-app-pub-5243900877967265/8364961790"
-      }
+  // showBanner() {
+  //   try {
+  //     const bannerConfig: AdMobFreeBannerConfig = {
+  //       isTesting: false,
+  //       autoShow: true,
+  //       id: "ca-app-pub-5243900877967265/8364961790"
+  //     }
 
-      this.adMobFree.banner.config(bannerConfig);
+  //     this.adMobFree.banner.config(bannerConfig);
 
-      this.adMobFree.banner.prepare();
+  //     this.adMobFree.banner.prepare();
 
-      this.adMobFree.banner.show();
-    }
-    catch (e) {
-      console.error(e);
-    }
-  }
+  //     this.adMobFree.banner.show();
+  //   }
+  //   catch (e) {
+  //     console.error(e);
+  //   }
+  // }
 
   openPage(page){
-    this.showBanner();
+    //this.showBanner();
   	this.navCtrl.push(page);
   }
   openLink(url:string){

@@ -18,13 +18,18 @@ export class HorariosPage {
 
   ionViewDidLoad(){
     this._materias.getMaterias().subscribe(data => {
-      this.materias = data['materias'];
+      //MATERIAS 1º CUAT.
+      //this.materias = data['materias'];
+
+      //MATERIAS 2º CUAT.
+      this.materias = data['materias2'];      
     });
   }
 
 
   mostrarMateriasDias(dia:string, ano:string){
     this.materiasFiltro = this.materias.filter(x => x.dia == dia && x.ano == ano);
+   
     if (this.mostrar == dia)
       this.mostrar = "";
     else 
