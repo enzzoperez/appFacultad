@@ -8,6 +8,7 @@ import { ExamenesPage } from '../pages/examenes/examenes';
 import { PlanEstudiosPage } from '../pages/plan-estudios/plan-estudios';
 import { CalendarioPage } from '../pages/calendario/calendario';
 import { AboutPage } from '../pages/about/about';
+import { AboutColmenaPage } from '../pages/about-colmena/about-colmena';
 
 import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free';
 
@@ -36,6 +37,7 @@ export class MyApp {
       { title: 'Calendario Académico', component: CalendarioPage, icon: 'calendar' },
       { title: 'Plan de Estudios', component: PlanEstudiosPage, icon: 'copy' },
       { title: 'Dpto. de Informática', component: AboutPage, icon: 'contacts' },
+      { title: 'Acerca de Colmena', component: AboutColmenaPage, icon: 'globe' },
     ];
 
   }
