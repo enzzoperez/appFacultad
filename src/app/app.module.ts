@@ -9,6 +9,7 @@ import { ExamenesPage } from '../pages/examenes/examenes';
 import { PlanEstudiosPage } from '../pages/plan-estudios/plan-estudios';
 import { CalendarioPage } from '../pages/calendario/calendario';
 import { AboutPage } from '../pages/about/about';
+import { AboutColmenaPage } from '../pages/about-colmena/about-colmena';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MateriasService} from '../providers/materias.service';
@@ -23,6 +24,7 @@ import { AdMobFree } from '@ionic-native/admob-free';
     PlanEstudiosPage, 
     CalendarioPage,
     AboutPage,
+    AboutColmenaPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -36,6 +38,7 @@ import { AdMobFree } from '@ionic-native/admob-free';
     PlanEstudiosPage, 
     CalendarioPage,
     AboutPage,
+    AboutColmenaPage
   ],
   providers: [
     SplashScreen,
