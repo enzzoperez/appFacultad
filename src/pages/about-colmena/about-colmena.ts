@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, AlertController } from 'ionic-angular';
+import { InAppBrowser } from '@ionic-native/in-app-browser'
 
 
 @Component({
@@ -11,6 +12,11 @@ export class AboutColmenaPage {
   constructor(
   	public navCtrl: NavController, 
   	public navParams: NavParams, 
-  	public alertCtrl: AlertController){}
+  	public alertCtrl: AlertController,
+  	private iab: InAppBrowser){}
 
+  	openLink(url:string){
+  		let browser = this.iab.create(url);
+  		browser.show();
+  	}
 }

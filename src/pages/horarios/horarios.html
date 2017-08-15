@@ -34,7 +34,7 @@
 			<ion-item *ngFor="let dia of dias">
 				<button ion-button block (click)="mostrarMateriasDias(dia,1)">{{dia}}</button>
 				<div *ngIf="mostrar==dia">
-					<ion-item *ngFor="let materia of materiasFiltro">
+					<ion-item *ngFor="let materia of materiasFiltro" (click)="detalleMateria(materia);">
 						<h2>{{materia.nombre}} - {{materia.modo}}</h2>
 						<h3><b>Comisión: {{materia.comision}}</b></h3>
 						<h3>Hora: {{materia.hora}} - Aula: {{materia.aula}}</h3>
@@ -46,7 +46,7 @@
 			<ion-item *ngFor="let dia of dias">
 				<button ion-button block (click)="mostrarMateriasDias(dia,2)">{{dia}}</button>
 				<div *ngIf="mostrar==dia">
-					<ion-item *ngFor="let materia of materiasFiltro">
+					<ion-item *ngFor="let materia of materiasFiltro" (click)="detalleMateria(materia);">
 						<h2>{{materia.nombre}} - {{materia.modo}}</h2>
 						<h3>Hora: {{materia.hora}} - Aula: {{materia.aula}}</h3>
 					</ion-item>
@@ -57,7 +57,7 @@
 			<ion-item *ngFor="let dia of dias">
 				<button ion-button block (click)="mostrarMateriasDias(dia,3)">{{dia}}</button>
 				<div *ngIf="mostrar==dia">
-					<ion-item *ngFor="let materia of materiasFiltro">
+					<ion-item *ngFor="let materia of materiasFiltro" (click)="detalleMateria(materia);" >
 						<h2>{{materia.nombre}} - {{materia.modo}}</h2>
 						<h3>Hora: {{materia.hora}} - Aula: {{materia.aula}}</h3>
 					</ion-item>
@@ -68,7 +68,7 @@
 			<ion-item *ngFor="let dia of dias">
 				<button ion-button block (click)="mostrarMateriasDias(dia,4)">{{dia}}</button>
 				<div *ngIf="mostrar==dia">
-					<ion-item *ngFor="let materia of materiasFiltro">
+					<ion-item *ngFor="let materia of materiasFiltro" (click)="detalleMateria(materia);">
 						<h2>{{materia.nombre}} - {{materia.modo}}</h2>
 						<h3>Hora: {{materia.hora}} - Aula: {{materia.aula}}</h3>
 					</ion-item>
@@ -79,7 +79,7 @@
 			<ion-item *ngFor="let dia of dias">
 				<button ion-button block (click)="mostrarMateriasDias(dia,5)">{{dia}}</button>
 				<div *ngIf="mostrar==dia">
-					<ion-item *ngFor="let materia of materiasFiltro">
+					<ion-item *ngFor="let materia of materiasFiltro" (click)="detalleMateria(materia);">
 						<h2>{{materia.nombre}} - {{materia.modo}}</h2>
 						<h3>Hora: {{materia.hora}} - Aula: {{materia.aula}}</h3>
 					</ion-item>
@@ -87,4 +87,9 @@
 			</ion-item>
 		</ion-list>
 	</div>
+	<ion-card>
+	  <ion-card-content>
+	    Podes ver dias y horarios de una determinada materia presionando sobre ella ;)
+	  </ion-card-content>
+	</ion-card>
 </ion-content>

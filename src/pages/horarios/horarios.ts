@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ModalController } from 'ionic-angular'
+
+import { ModalMateriaPage } from '../modal-materia/modal-materia';
 import { MateriasService } from '../../providers/materias.service';
 
 
@@ -14,7 +17,7 @@ export class HorariosPage {
   materiasDias: any;
   mostrar:string;
   anos:string = "1";
-  constructor(public _materias: MateriasService) {}
+  constructor(public _materias: MateriasService, private modalCtrl: ModalController) {}
 
   ionViewDidLoad(){
     this._materias.getMaterias().subscribe(data => {
@@ -34,5 +37,10 @@ export class HorariosPage {
       this.mostrar = "";
     else 
       this.mostrar = dia;
+  }
+
+  detalleMateria(materia: any){
+    let modal = this.modalCtrl.create(ModalMateriaPage, {materia: materia, lista: this.materias});
+    modal.present();
   }
 }
