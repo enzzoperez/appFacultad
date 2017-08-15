@@ -23,7 +23,7 @@
 	{"ano":"1","comision":"1-2","modo":"Teor.","dia":"Viernes" , "nombre":"Sist. de Representación","hora":"19.00", "aula": "Mayor 2"},
 
 	{"ano":"2","modo":"Teor.","dia":"Martes" ,"nombre":"Ingles I", "hora":"08.00", "aula": "Aula 3"},
-	{"ano":"2","modo":"Teor.","dia":"Martes" ,"nombre":"Analisis Mat II", "hora":"15.00", "aula": "Martha Bienner"},
+	{"ano":"2","modo":"Teor.","dia":"Martes" ,"nombre":"Análisis Mat II", "hora":"15.00", "aula": "Martha Bienner"},
 	{"ano":"2","modo":"Teor.","dia":"Martes" ,"nombre":"Programación I", "hora":"18.00", "aula": "Aula 3"},
 
 	{"ano":"2","modo":"Teor.","dia":"Miercoles" ,"nombre":"Ingles I", "hora":"08.00", "aula": "Aula 3"},
@@ -31,7 +31,7 @@
 	{"ano":"2","modo":"Prac.","dia":"Miercoles" ,"nombre":"Programacion I", "hora":"18.00", "aula": "IDI"},
 	
 	{"ano":"2","modo":"Teor.","dia":"Jueves" ,"nombre":"Fisica II", "hora":"08.00", "aula": "Martha Bienner"},
-	{"ano":"2","modo":"Teor.","dia":"Jueves" ,"nombre":"Analisis Mat II", "hora":"15.00", "aula": "Martha Bienner"},
+	{"ano":"2","modo":"Teor.","dia":"Jueves" ,"nombre":"Análisis Mat II", "hora":"15.00", "aula": "Martha Bienner"},
 	{"ano":"2","modo":"Teor.","dia":"Jueves" ,"nombre":"Programación I", "hora":"18.00", "aula": "Aula 3"},
 	{"ano":"2","modo":"Prac.","dia":"Jueves" ,"nombre":"Programación I", "hora":"20.00", "aula": "IDI"},
 
@@ -45,7 +45,7 @@
 	{"ano":"3","modo":"Teor.","dia":"Martes" ,"nombre":"Bases de Datos", "hora":"15.00", "aula": "IDI"},
 
 	{"ano":"3","modo":"Teor.","dia":"Miercoles" ,"nombre":"Ingles II", "hora":"10.00", "aula": "Aula 3"},
-	{"ano":"3","modo":"Teor.","dia":"Miercoles" ,"nombre":"Analisis Numerico", "hora":"15.00", "aula": "Común 1"},
+	{"ano":"3","modo":"Teor.","dia":"Miercoles" ,"nombre":"Análisis Numerico", "hora":"15.00", "aula": "Común 1"},
 	{"ano":"3","modo":"Teor.","dia":"Miercoles" ,"nombre":"Lenguajes Formales y automatas", "hora":"19.00", "aula": "Común 2"},
 
 	{"ano":"3","modo":"Teor.","dia":"Jueves" ,"nombre":"Teor. de la Inform. y comunicación I", "hora":"08.00", "aula": "IDI"},
@@ -53,7 +53,7 @@
 	{"ano":"3","modo":"Prac.","dia":"Jueves" ,"nombre":"Sist. Operativos", "hora":"17.00", "aula": "IDI"},
 	{"ano":"3","modo":"Prac.","dia":"Jueves" ,"nombre":"Teor. de la Inform. y comunicación I", "hora":"19.00", "aula": "IDI"},
 
-	{"ano":"3","modo":"Prac.","dia":"Viernes" ,"nombre":"Analisis Numerico", "hora":"16.00", "aula": "Aula 10"},
+	{"ano":"3","modo":"Prac.","dia":"Viernes" ,"nombre":"Análisis Numerico", "hora":"16.00", "aula": "Aula 10"},
 	{"ano":"3","modo":"Teor.","dia":"Viernes" ,"nombre":"Sist. Operativos", "hora":"19.00", "aula": "IDI"},
 
 	{"ano":"4","modo":"Teor.","dia":"Lunes" ,"nombre":"Organización Empresarial", "hora":"15.00", "aula": "IDI"},
@@ -92,11 +92,11 @@
 	],
 
 	"materias2" : [
-		{"ano":"1","comision":"1 - 2", "modo":"Teor.", "dia":"Lunes", "nombre":"Analisis Matemático", "hora":"10.00", "aula": "Aula Mayor 2"},
+		{"ano":"1","comision":"1 - 2", "modo":"Teor.", "dia":"Lunes", "nombre":"Análisis Matemático", "hora":"10.00", "aula": "Aula Mayor 2"},
 		{"ano":"1","comision":"1 - 2", "modo":"Prac.", "dia":"Lunes", "nombre":"Sist. de Representación", "hora":"18.00", "aula": "Virgen del Valle"},
 		
 		{"ano":"1","comision":"1 - 2", "modo":"Teor.", "dia":"Martes", "nombre":"Física", "hora":"08.00", "aula": "Aula Mayor 2"},
-		{"ano":"1","comision":"1 - 2", "modo":"Teor.", "dia":"Martes", "nombre":"Analisis Matemático", "hora":"10.00", "aula": "Aula Mayor 2"},
+		{"ano":"1","comision":"1 - 2", "modo":"Teor.", "dia":"Martes", "nombre":"Análisis Matemático", "hora":"10.00", "aula": "Aula Mayor 2"},
 		{"ano":"1","comision":"1 - 2", "modo":"Prac.", "dia":"Martes", "nombre":"Geometría", "hora":"16.00", "aula": "Virgen del Valle"},
 		{"ano":"1","comision":"1", "modo":"Prac.", "dia":"Martes", "nombre":"Fundamentos de Informatica", "hora":"20.00", "aula": "Martha Bienner"},
 
@@ -114,12 +114,12 @@
 		{"ano":"1","comision":"1-2","modo":"Teor.","dia":"Viernes" ,"nombre":"Fundamentos de Informatica", "hora":"20.00", "aula": "Aula Mayor 2"},
 		
 		{"ano":"2","comision":"-","modo":"Teor.","dia":"Lunes", "nombre":"Probabilidad y Est.", "hora":"08.00", "aula": "Virgen del Valle"},
-		{"ano":"2","comision":"-","modo":"Prac.","dia":"Lunes", "nombre":"Probabilidad y Est", "hora":"19.30", "aula": "IDI"},
+		{"ano":"2","comision":"-","modo":"Prac.","dia":"Lunes", "nombre":"Probabilidad y Est.", "hora":"19.30", "aula": "IDI"},
 
 		{"ano":"2","comision":"-","modo":"Teor.","dia":"Martes", "nombre":"Probabilidad y Est.", "hora":"08.00", "aula": "Virgen del Valle"},
 		{"ano":"2","comision":"-","modo":"Teor.","dia":"Martes", "nombre":"Calculo avanzado", "hora":"15.00", "aula": "Martha Bienner"},
 		{"ano":"2","comision":"-","modo":"Teor.","dia":"Martes", "nombre":"Programación II", "hora":"17.00", "aula": "Aula 3"},
-		{"ano":"2","comision":"-","modo":"Prac.","dia":"Martes", "nombre":"Probabilidad y Est", "hora":"19.30", "aula": "IDI"},	
+		{"ano":"2","comision":"-","modo":"Prac.","dia":"Martes", "nombre":"Probabilidad y Est.", "hora":"19.30", "aula": "IDI"},	
 
 		{"ano":"2","comision":"-","modo":"Teor.","dia":"Miercoles", "nombre":"Arquitectura de Computadores", "hora":"08.00", "aula": "Aula 3"},
 		{"ano":"2","comision":"-","modo":"Prac.","dia":"Miercoles", "nombre":"Programación II", "hora":"18.00", "aula": "IDI"},
