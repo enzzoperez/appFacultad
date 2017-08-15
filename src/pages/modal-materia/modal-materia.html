@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ materia.nombre }}</ion-title>
+    <ion-buttons end>
+			<button ion-button icon-only (click)="dismissModal()"><ion-icon name="close"></ion-icon></button>			
+	</ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+	<ion-card *ngFor="let m of materiaFiltro">
+	  <ion-card-header>
+	    <h2><b>{{ m.dia }}</b></h2>
+	  </ion-card-header>
+	  <ion-card-content>
+	    <b>Hora: </b>{{ m.hora }} - <b>Aula: </b>{{ m.aula }}
+	    <br>
+	    <b>Comisión: </b>{{ m.comision }} - <b>Modo: </b>{{ m.modo }}
+	  </ion-card-content>
+	</ion-card>
+</ion-content>
