@@ -22,10 +22,10 @@ export class HorariosPage {
   ionViewDidLoad(){
     this._materias.getMaterias().subscribe(data => {
       //MATERIAS 1º CUAT.
-      //this.materias = data['materias'];
+      this.materias = data['materias'];
 
       //MATERIAS 2º CUAT.
-      this.materias = data['materias2'];      
+      //this.materias = data['materias2'];      
     });
   }
 

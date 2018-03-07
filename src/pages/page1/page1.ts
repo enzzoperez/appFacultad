@@ -10,7 +10,7 @@ import { PlanEstudiosPage } from '../plan-estudios/plan-estudios';
 import { CalendarioPage } from '../calendario/calendario';
 import { AboutPage } from '../about/about';
 
-import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free';
+// import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free';
 
 
 @Component({
@@ -30,8 +30,8 @@ export class Page1 {
     private iab:InAppBrowser,
     public splashScreen: SplashScreen,
     public platform: Platform,
-    private alertCtrl: AlertController,
-    private adMobFree: AdMobFree
+    private alertCtrl: AlertController
+    // private adMobFree: AdMobFree
     ) {
   }
 
