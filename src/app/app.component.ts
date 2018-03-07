@@ -10,7 +10,7 @@ import { CalendarioPage } from '../pages/calendario/calendario';
 import { AboutPage } from '../pages/about/about';
 import { AboutColmenaPage } from '../pages/about-colmena/about-colmena';
 
-import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free';
+// import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free';
 
 
 
@@ -27,8 +27,9 @@ export class MyApp {
 
   constructor(
     public platform: Platform, 
-    private iab:InAppBrowser,
-    private adMobFree: AdMobFree) {
+    private iab:InAppBrowser
+    // private adMobFree: AdMobFree
+  ) {
     
     // used for an example of ngFor and navigation
     this.pages = [

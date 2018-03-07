@@ -15,7 +15,7 @@ import { ModalMateriaPage } from '../pages/modal-materia/modal-materia';
 
 
 import { MateriasService} from '../providers/materias.service';
-import { AdMobFree } from '@ionic-native/admob-free';
+// import { AdMobFree } from '@ionic-native/admob-free';
 
 @NgModule({
   declarations: [
@@ -48,8 +48,7 @@ import { AdMobFree } from '@ionic-native/admob-free';
     SplashScreen,
     MateriasService,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    InAppBrowser,
-    AdMobFree
+    InAppBrowser
   ]
 })
 export class AppModule {}
