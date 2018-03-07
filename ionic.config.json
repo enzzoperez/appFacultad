@@ -1,5 +1,8 @@
 {
   "name": "appFacultad",
   "app_id": "76ecdd48",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }

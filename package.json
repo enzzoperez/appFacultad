@@ -1,70 +1,73 @@
 {
-    "name": "ionic-hello-world",
-    "author": "Ionic Framework",
-    "homepage": "http://ionicframework.com/",
-    "private": true,
-    "scripts": {
-        "clean": "ionic-app-scripts clean",
-        "build": "ionic-app-scripts build",
-        "ionic:build": "ionic-app-scripts build",
-        "ionic:serve": "ionic-app-scripts serve"
+  "name": "ionic-hello-world",
+  "author": "Ionic Framework",
+  "homepage": "http://ionicframework.com/",
+  "private": true,
+  "scripts": {
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve"
+  },
+  "dependencies": {
+    "@angular/animations": "^4.0.0",
+    "@angular/common": "2.4.8",
+    "@angular/compiler": "2.4.8",
+    "@angular/compiler-cli": "2.4.8",
+    "@angular/core": "^2.4.8",
+    "@angular/forms": "2.4.8",
+    "@angular/http": "2.4.8",
+    "@angular/platform-browser": "2.4.8",
+    "@angular/platform-browser-dynamic": "2.4.8",
+    "@angular/platform-server": "2.4.8",
+    "@ionic-native/core": "^3.11.0",
+    "@ionic-native/in-app-browser": "^3.4.4",
+    "@ionic-native/splash-screen": "^3.1.0",
+    "@ionic/storage": "2.0.0",
+    "cordova-admob-sdk": "^0.8.0",
+    "cordova-plugin-device": "^1.1.4",
+    "cordova-plugin-ionic-keyboard": "^2.0.5",
+    "cordova-plugin-ionic-webview": "^1.1.16",
+    "cordova-plugin-splashscreen": "^4.0.3",
+    "cordova-plugin-statusbar": "^2.2.1",
+    "cordova-plugin-whitelist": "^1.3.1",
+    "cordova-promise-polyfill": "0.0.2",
+    "ionic-angular": "2.3.0",
+    "ionic-plugin-keyboard": "^2.2.1",
+    "ionicons": "3.0.0",
+    "rxjs": "5.0.1",
+    "sw-toolbox": "3.4.0",
+    "web-animations-js": "^2.3.1",
+    "zone.js": "0.7.2",
+    "cordova-android": "~7.0.0"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "1.1.4",
+    "ionic": "3.7.0",
+    "typescript": "2.0.9"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-console",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-device",
+    "cordova-plugin-splashscreen",
+    "ionic-plugin-keyboard"
+  ],
+  "cordovaPlatforms": [],
+  "description": "appFacultad: An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-whitelist": {},
+      "ionic-plugin-keyboard": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-keyboard": {}
     },
-    "dependencies": {
-        "@angular/animations": "^4.0.0",
-        "@angular/common": "2.4.8",
-        "@angular/compiler": "2.4.8",
-        "@angular/compiler-cli": "2.4.8",
-        "@angular/core": "^2.4.8",
-        "@angular/forms": "2.4.8",
-        "@angular/http": "2.4.8",
-        "@angular/platform-browser": "2.4.8",
-        "@angular/platform-browser-dynamic": "2.4.8",
-        "@angular/platform-server": "2.4.8",
-        "@ionic-native/admob-free": "^4.1.0",
-        "@ionic-native/core": "^3.11.0",
-        "@ionic-native/in-app-browser": "^3.4.4",
-        "@ionic-native/splash-screen": "^3.1.0",
-        "@ionic/storage": "2.0.0",
-        "cordova-admob-sdk": "^0.8.0",
-        "cordova-plugin-admob-free": "^0.10.0",
-        "cordova-plugin-device": "1.1.4",
-        "cordova-plugin-splashscreen": "~4.0.1",
-        "cordova-plugin-statusbar": "2.2.1",
-        "cordova-plugin-whitelist": "1.3.1",
-        "cordova-promise-polyfill": "0.0.2",
-        "ionic-angular": "2.3.0",
-        "ionic-plugin-keyboard": "~2.2.1",
-        "ionicons": "3.0.0",
-        "rxjs": "5.0.1",
-        "sw-toolbox": "3.4.0",
-        "web-animations-js": "^2.3.1",
-        "zone.js": "0.7.2"
-    },
-    "devDependencies": {
-        "@ionic/app-scripts": "1.1.4",
-        "@ionic/cli-plugin-cordova": "1.6.2",
-        "@ionic/cli-plugin-ionic-angular": "1.4.1",
-        "ionic": "3.7.0",
-        "typescript": "2.0.9"
-    },
-    "cordovaPlugins": [
-        "cordova-plugin-console",
-        "cordova-plugin-whitelist",
-        "cordova-plugin-statusbar",
-        "cordova-plugin-device",
-        "cordova-plugin-splashscreen",
-        "ionic-plugin-keyboard"
-    ],
-    "cordovaPlatforms": [],
-    "description": "appFacultad: An Ionic project",
-    "cordova": {
-        "plugins": {
-            "cordova-plugin-device": {},
-            "cordova-plugin-splashscreen": {},
-            "cordova-plugin-statusbar": {},
-            "cordova-plugin-whitelist": {},
-            "ionic-plugin-keyboard": {},
-            "cordova-plugin-admob-free": {}
-        }
-    }
+    "platforms": [
+      "android"
+    ]
+  }
 }
