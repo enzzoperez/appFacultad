@@ -33,11 +33,12 @@
 	{"ano":"2","modo":"Teor.","dia":"Jueves" ,"nombre":"Fisica II", "hora":"08.00", "aula": "Martha Bienner"},
 	{"ano":"2","modo":"Teor.","dia":"Jueves" ,"nombre":"Análisis Mat II", "hora":"15.00", "aula": "Martha Bienner"},
 	{"ano":"2","modo":"Teor.","dia":"Jueves" ,"nombre":"Programación I", "hora":"18.00", "aula": "Aula 3"},
-	{"ano":"2","modo":"Prac.","dia":"Jueves" ,"nombre":"Programación I", "hora":"20.00", "aula": "IDI"},
 
 	{"ano":"2","modo":"Teor.","dia":"Viernes" ,"nombre":"Fisica II", "hora":"10.00", "aula": "Martha Bienner"},
 	{"ano":"2","modo":"Prac.","dia":"Viernes" ,"nombre":"Mat. Discreta y log.", "hora":"15.00", "aula": "Común 1"},
-	{"ano":"2","modo":"Teor.","dia":"Viernes" ,"nombre":"Mat. Discreta y log.", "hora":"19.00", "aula": "Aula 10"},
+	{"ano":"2","modo":"Teor.","dia":"Viernes" ,"nombre":"Mat. Discreta y log.", "hora":"17.00", "aula": "Aula 10"},
+	{"ano":"2","modo":"Prac.","dia":"Viernes" ,"nombre":"Programación I", "hora":"19.00", "aula": "IDI"},
+
 
 	{"ano":"3","modo":"Teor.","dia":"Lunes" ,"nombre":"Ingles II", "hora":"08.00", "aula": "Aula 3"},
 	{"ano":"3","modo":"Teor.","dia":"Lunes" ,"nombre":"Bases de Datos", "hora":"15.00", "aula": "IDI"},
@@ -56,10 +57,10 @@
 	{"ano":"3","modo":"Prac.","dia":"Viernes" ,"nombre":"Análisis Numerico", "hora":"16.00", "aula": "Aula 10"},
 	{"ano":"3","modo":"Teor.","dia":"Viernes" ,"nombre":"Sist. Operativos", "hora":"19.00", "aula": "IDI"},
 
+	{"ano":"4","modo":"Teor.","dia":"Lunes" ,"nombre":"Economía", "hora":"08.00", "aula": "IDI"},
 	{"ano":"4","modo":"Teor.","dia":"Lunes" ,"nombre":"Organización Empresarial", "hora":"15.00", "aula": "IDI"},
 	{"ano":"4","modo":"Prac.","dia":"Lunes" ,"nombre":"Sist. Tiempo Real", "hora":"17.00", "aula": "IDI"},
 	{"ano":"4","modo":"Teor.","dia":"Lunes" ,"nombre":"Procesam. Dig. de Imag.(E)", "hora":"19.00", "aula": "IDI"},
-	{"ano":"4","modo":"Teor.","dia":"Lunes" ,"nombre":"Tecn. e ingeniería Web(E)", "hora":"18.00", "aula": "IDI"},
 	
 	{"ano":"4","modo":"Teor.","dia":"Martes" ,"nombre":"Gest. del Conocimiento(E)", "hora":"08.00", "aula": "IDI"},
 	{"ano":"4","modo":"Teor.","dia":"Martes" ,"nombre":"Ing. Soft. II", "hora":"15.00", "aula": "Aula 3"},
@@ -67,28 +68,29 @@
 
 	{"ano":"4","modo":"Prac.","dia":"Miercoles" ,"nombre":"Procesam. Dig. de Imag.(E)", "hora":"19.00", "aula": "IDI"},
 
+	{"ano":"4","modo":"Teor.","dia":"Jueves" ,"nombre":"Economía", "hora":"08.00", "aula": "IDI"},
 	{"ano":"4","modo":"Prac.","dia":"Jueves" ,"nombre":"Ing. Soft. II", "hora":"10.00", "aula": "IDI"},
 	{"ano":"4","modo":"Teor.","dia":"Jueves" ,"nombre":"Organización Empresarial", "hora":"15.00", "aula": "IDI"},
 	{"ano":"4","modo":"Prac.","dia":"Jueves" ,"nombre":"Gest. del Conocimiento(E)", "hora":"17.00", "aula": "IDI"},
 
 	{"ano":"4","modo":"Teor.","dia":"Viernes" ,"nombre":"Sist. Tiempo Real", "hora":"09.00(C/15 días)", "aula": "IDI"},
 
-	{"ano":"5","modo":"Prac.","dia":"Lunes" ,"nombre":"Sist. Inteligentes", "hora":"15.00", "aula": "Común 2"},
-	{"ano":"5","modo":"Teor.","dia":"Lunes" ,"nombre":"Calidad en el proc. de prod. de soft.", "hora":"17.00", "aula": "Box de Prof."},
+	{"ano":"5","modo":"Teor.","dia":"Lunes" ,"nombre":"Calidad en el proc. de prod. de soft.", "hora":"18.00", "aula": "IDI."},
 
-	{"ano":"5","modo":"Teor.","dia":"Martes" ,"nombre":"Auditoria Informatica", "hora":"10.00", "aula": "IDI"},
+	{"ano":"5","modo":"Teor.","dia":"Martes" ,"nombre":"Auditoria Informatica", "hora":"11.00", "aula": "IDI"},
 	{"ano":"5","modo":"Prac.","dia":"Martes" ,"nombre":"Reingenieria de procesos", "hora":"15.00", "aula": "IDI"},
 	{"ano":"5","modo":"Prac.","dia":"Martes" ,"nombre":"Gestión en la web(E)", "hora":"17.00", "aula": "IDI"},
 
 	{"ano":"5","modo":"Teor.","dia":"Miercoles" ,"nombre":"Minería de datos(E)", "hora":"15.00", "aula": "IDI"},
-	{"ano":"5","modo":"Prac.","dia":"Miercoles" ,"nombre":"Calidad en el proc. de prod. de soft.", "hora":"18.00", "aula": "Box de Prof."},	
 
 	{"ano":"5","modo":"Teor.","dia":"Jueves" ,"nombre":"Reingenieria de procesos", "hora":"09.00(C/15 días)", "aula": "IDI"},
-	{"ano":"5","modo":"Teor.","dia":"Jueves" ,"nombre":"Auditoria Informatica", "hora":"18.00", "aula": "IDI"},
+	{"ano":"5","modo":"Pract.","dia":"Jueves" ,"nombre":"Sist. Inteligentes", "hora":"15.00", "aula": "IDI"},
+	{"ano":"5","modo":"Teor.","dia":"Jueves" ,"nombre":"Auditoria Informatica", "hora":"17.00", "aula": "IDI"},
+	{"ano":"5","modo":"Teor.","dia":"Jueves" ,"nombre":"Calidad en el proc. de prod. de soft.", "hora":"19.00", "aula": "IDI."},
 
-	{"ano":"5","modo":"Teor..","dia":"Viernes" ,"nombre":"Sist. Inteligentes", "hora":"09.00(C/15)", "aula": "IDI"},
-	{"ano":"5","modo":"Prac.","dia":"Viernes" ,"nombre":"Minería de datos(E)", "hora":"16.00", "aula": "IDI"},
-	{"ano":"5","modo":"Prac.","dia":"Viernes" ,"nombre":"Gestión en la web(E)", "hora":"18.00", "aula": "IDI"}
+	{"ano":"5","modo":"Teor.","dia":"Viernes" ,"nombre":"Sist. Inteligentes", "hora":"09.00(C/15)", "aula": "IDI"},
+	{"ano":"5","modo":"Prac.","dia":"Viernes" ,"nombre":"Minería de datos(E)", "hora":"15.00", "aula": "IDI"},
+	{"ano":"5","modo":"Prac.","dia":"Viernes" ,"nombre":"Gestión en la web(E)", "hora":"17.30", "aula": "IDI"}
 	],
 
 	"materias2" : [
